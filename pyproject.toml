@@ -1,0 +1,11 @@
+[project]
+name = "imessage-extractor"
+version = "0.1.0"
+description = "Extract and decode iMessage text messages from chat.db"
+requires-python = ">=3.8"
+dependencies = [
+    "bpylist2>=4.0.0",
+]
+
+[project.scripts]
+extract-messages = "extract_messages:main"
