@@ -31,13 +31,13 @@ uv sync
 To see all available chats (sorted by number of texts sent):
 
 ```bash
-python extract_messages.py list [db_path]
+uv run extract_messages.py list [db_path]
 ```
 
 Example:
 
 ```bash
-python extract_messages.py list chat.db
+uv run extract_messages.py list chat.db
 ```
 
 ### Extract Messages from a Chat
@@ -45,13 +45,13 @@ python extract_messages.py list chat.db
 To extract messages from a specific chat:
 
 ```bash
-python extract_messages.py extract <chat_identifier> [db_path]
+uv run extract_messages.py extract <chat_identifier> [db_path]
 ```
 
 Example:
 
 ```bash
-python extract_messages.py extract +12012493586 chat.db
+uv run extract_messages.py extract +12012493586 chat.db
 ```
 
 ### Debug Mode
@@ -59,7 +59,7 @@ python extract_messages.py extract +12012493586 chat.db
 Add `--debug` flag to see detailed decoding information:
 
 ```bash
-python extract_messages.py extract +12012493586 chat.db --debug
+uv run extract_messages.py extract +12012493586 chat.db --debug
 ```
 
 ## Database Location
@@ -78,7 +78,7 @@ Alternatively, you can copy the database to your working directory:
 
 ```bash
 cp ~/Library/Messages/chat.db .
-python extract_messages.py list chat.db
+uv run extract_messages.py list chat.db
 ```
 
 ## Requirements
